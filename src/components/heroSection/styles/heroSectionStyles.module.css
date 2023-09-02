@@ -1,0 +1,698 @@
+.heroSectionWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* background-color: orange; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.bannerImgwrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: gold; */
+    background-image: url('../../../assets/images/bannerDesktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bannerImgwrapper img {
+    /* position: relative; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contentWrapper {
+    position: relative;
+    width: 90%;
+    min-width: 90%;
+    height: 70%;
+    min-height: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    /* border: 1px solid red; */
+}
+
+.brandLogoWrapper {
+    position: relative;
+    width: auto;
+    height: 100%;
+    /* border: 1px solid red; */
+    z-index: 2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-right: 3%;
+}
+
+.logoTextWrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    /* border: 1px solid red; */
+}
+
+.logoTextWrapper p {
+    position: relative;
+    font-size: 2.5rem;
+    color: white;
+    font-family: "Zapf Humanist 601";
+    letter-spacing: 0.1rem;
+}
+
+
+.logoTextSpan {
+    position: relative;
+    font-size: 2.5rem;
+    color: white;
+    font-family: "Zapf Humanist 601";
+    letter-spacing: 0.1rem;
+    /* border: 1px solid red; */
+}
+
+.logoTextSpan::before {
+    position: absolute;
+    content: "";
+    background-color: white;
+    width: 60%;
+    height: 0.08rem;
+    top: 23%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.registerCharacter {
+    font-size: 0.5rem;
+    color: white;
+    margin-left: 2px;
+}
+
+.discoverContentWrapper {
+    position: relative;
+    width: 30%;
+    height: 100%;
+    /* border: 1px solid black; */
+    z-index: 2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+
+
+.primaryHeadingWrapper {
+    width: 100%;
+    height: 50px;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.primaryHeadingWrapper p {
+    font-size: 1rem;
+    color: white;
+}
+
+.secondaryHeadingWrapper {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.secondaryHeadingWrapper p {
+    font-size: 1.8rem;
+    color: white;
+}
+
+.contentTextWrapper {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contentTextWrapper p {
+    font-size: 1rem;
+    color: white;
+    line-height: 1.6;
+    letter-spacing: 0.02rem;
+}
+
+.buttonWrapper {
+    width: 100%;
+    /* border: 1px solid red; */
+    height: 4rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.btnContainer {
+    width: 70%;
+    height: 90%;
+    border: 1.5px solid #D6D5CC;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 100%;
+    grid-template-areas:
+        "btnTextCell btnIconCell";
+    padding: 0;
+    margin: 0;
+
+}
+
+.btnTextCell {
+    grid-area: btnTextCell;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 1px solid red; */
+    padding-left: 8%;
+}
+
+.btnTextCell p {
+    font-size: 1rem;
+    color: white;
+}
+
+.btnIconCell {
+    grid-area: btnIconCell;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.btnIcon {
+    font-size: 20px;
+    color: white;
+}
+
+/* --------------------------------------------- */
+.globalNavWrapper {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    z-index: 999;
+    transition: top 0.3s cubic-bezier(.215, .61, .355, 1);
+    border: 1px solid rgb(144, 144, 144);
+    top: 0px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* -------------------------- */
+
+.leftNavOptionsList {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 1px solid red; */
+    padding-left: 2%;
+}
+
+.brandNavLogoWrapper {
+    display: none;
+}
+
+.dektopOptions {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.mobileOptions {
+    display: none;
+}
+
+.mobileNavIconWrapper {
+    display: none;
+}
+
+.optionTextWrapper {
+    height: 100%;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.optionTextWrapper p {
+    font-size: 0.85rem;
+    white-space: nowrap;
+    font-weight: bold;
+    letter-spacing: 0.02rem;
+    margin: 0;
+}
+
+.searchIcon {
+    font-size: 0.85rem;
+}
+
+.rightNavOptionsList {
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* border: 1px solid red; */
+    padding-right: 2%;
+}
+
+/* -------------------- */
+
+.globalNavWrapperFixed {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+    background-color: white;
+    border: 1px solid rgb(144, 144, 144);
+    transition: top 0.3s cubic-bezier(.215, .61, .355, 1);
+}
+
+
+@media only screen and (min-width: 641px) and (max-width: 1025px) {
+
+    .heroSectionWrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        /* background-color: orange; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .brandNavLogoWrapper {
+        display: none;
+    }
+
+    .dektopOptions {
+        display: none;
+
+    }
+
+    .mobileOptions {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .mobileNavIconWrapper {
+        display: none;
+    }
+
+    .bannerImgwrapper {
+        position: absolute;
+        width: 100%;
+        aspect-ratio: 1/1;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        overflow: hidden;
+        background-image: url('../../../assets/images/bannerDesktop.jpg');
+        background-position: center;
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+
+    .contentWrapper {
+        position: relative;
+        width: 90%;
+        min-width: 90%;
+        height: 70%;
+        min-height: 70%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        /* border: 1px solid red; */
+    }
+
+    .brandLogoWrapper {
+        position: relative;
+        width: auto;
+        height: 100%;
+        /* border: 1px solid red; */
+        z-index: 2;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-right: 10%;
+    }
+
+    .logoTextWrapper p {
+        position: relative;
+        font-size: 1.5rem;
+        color: white;
+        letter-spacing: 0.1rem;
+    }
+
+    .logoTextSpan {
+        position: relative;
+        font-size: 1.5rem;
+        color: white;
+        letter-spacing: 0.1rem;
+    }
+
+    .discoverContentWrapper {
+        position: relative;
+        width: 50%;
+        height: 100%;
+        /* border: 1px solid black; */
+        z-index: 2;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+
+    .contentTextWrapper p {
+        font-size: 1rem;
+        color: white;
+        line-height: 2;
+        letter-spacing: 0.02rem;
+    }
+
+
+    .btnContainer {
+        width: 100%;
+        height: 90%;
+        border: 1.5px solid #D6D5CC;
+        display: grid;
+        grid-template-columns: 80% 20%;
+        grid-template-rows: 100%;
+        grid-template-areas:
+            "btnTextCell btnIconCell";
+        padding: 0;
+        margin: 0;
+
+    }
+
+}
+
+
+@media only screen and (max-width: 641px) {
+
+    .heroSectionWrapper {
+        position: relative;
+        width: 100%;
+        height: auto;
+        /* background-color: orange; */
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+
+    .globalNavWrapper {
+        position: absolute;
+        display: flex;
+        width: 100%;
+        height: 80px;
+        background-color: transparent;
+        z-index: 999;
+        transition: top 0.3s cubic-bezier(.215, .61, .355, 1);
+        border: 1px solid transparent;
+        top: 0px;
+    }
+
+    .globalNavWrapperFixed {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        z-index: 999;
+        background-color: white;
+        transition: top 0.3s cubic-bezier(.215, .61, .355, 1);
+        color: black !important;
+        border-bottom: 1px solid gray;
+    }
+
+    .globalNavWrapperFixed p {
+        color: black !important;
+    }
+
+    .globalNavWrapperFixed .searchIcon {
+        color: black !important;
+    }
+
+    .brandNavLogoWrapper {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dektopOptions {
+        display: none;
+    }
+
+    .mobileOptions {
+        display: none;
+    }
+
+    .rightNavOptionsList {
+        display: none;
+    }
+
+    .leftNavOptionsList {
+        width: 100%;
+        justify-content: space-between;
+        /* border: 1px solid red; */
+    }
+
+    .mobileNavIconWrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        /* border: 1px solid red; */
+        height: 100%;
+    }
+
+    .brandNavLogoWrapper p {
+        font-size: 1.1rem;
+        color: white;
+    }
+
+    .navRegisterCharacter {
+        font-size: 0.5rem;
+        margin-left: 2px;
+    }
+
+    .optionTextWrapper {
+        /* border: 1px solid rebeccapurple; */
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .optionTextWrapper p {
+        color: white;
+    }
+
+    .searchIcon {
+        font-size: 1.2rem;
+        color: white;
+        /* border: 1px solid red; */
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bannerImgwrapper {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 1/1;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        overflow: hidden;
+        background-image: url('../../../assets/images/bannerMobile.jpg');
+        background-position: center;
+        /* background-size: cover; */
+        background-size: 145% 100%;
+        background-position: 35% 70%;
+    }
+
+
+
+    .contentWrapper {
+        position: relative;
+        width: 100%;
+        min-width: 100%;
+        height: auto;
+        min-height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        /* border: 1px solid red; */
+        background-color: #333333;
+    }
+
+    .brandLogoWrapper {
+        position: relative;
+        display: none;
+    }
+
+    .discoverContentWrapper {
+        position: relative;
+        width: 90%;
+        height: auto;
+        /* border: 1px solid black; */
+        z-index: 2;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        /* background-color: skyblue; */
+    }
+
+
+
+    .primaryHeadingWrapper {
+        width: 100%;
+        height: 50px;
+        margin-top: 1%;
+        margin-bottom: 5%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .primaryHeadingWrapper p {
+        font-size: 0.85rem;
+        color: white;
+    }
+
+    .secondaryHeadingWrapper {
+        width: 100%;
+        height: auto;
+        margin-bottom: 5%;
+        /* border: 1px solid white; */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .secondaryHeadingWrapper p {
+        font-size: 1.5rem;
+        color: white;
+        line-height: 1.5;
+    }
+
+    .contentTextWrapper {
+        width: 100%;
+        height: auto;
+        margin-bottom: 5%;
+        /* border: 1px solid white; */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .contentTextWrapper p {
+        font-size: 0.85rem;
+        color: white;
+        line-height: 2;
+        letter-spacing: 0.02rem;
+    }
+
+    .buttonWrapper {
+        width: 100%;
+        /* border: 1px solid red; */
+        height: 4rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 2%;
+    }
+
+    .btnContainer {
+        width: 100%;
+        height: 90%;
+        border: 1.5px solid #D6D5CC;
+        display: grid;
+        grid-template-columns: 80% 20%;
+        grid-template-rows: 100%;
+        grid-template-areas:
+            "btnTextCell btnIconCell";
+        padding: 0;
+        margin: 0;
+
+    }
+
+    .btnTextCell {
+        grid-area: btnTextCell;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        /* border: 1px solid red; */
+        padding-left: 8%;
+    }
+
+    .btnTextCell p {
+        font-size: 1rem;
+        color: white;
+    }
+
+    .btnIconCell {
+        grid-area: btnIconCell;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid red; */
+    }
+
+    .btnIcon {
+        font-size: 20px;
+        color: white;
+    }
+
+}

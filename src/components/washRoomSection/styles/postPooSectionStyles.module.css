@@ -1,0 +1,232 @@
+.postPooSectionWrapper {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.postPooSectionInnerWrapper {
+    width: 95%;
+    height: 75%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contentCell {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* border: 1px solid green; */
+}
+
+.contentInnerCell {
+    width: 80%;
+    height: auto;
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.headingCell {
+    width: 100%;
+    height: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.headingCell p {
+    font-size: 1.8rem;
+    font-family: "Zapf Humanist 601";
+    font-weight: #333333;
+}
+
+.contentTextCell {
+    width: 100%;
+    height: auto;
+    /* border: 1px solid green; */
+    margin-bottom: 5%;
+
+}
+
+.contentTextCell p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+.buttonCell {
+    width: 100%;
+    height: auto;
+    /* border: 1px solid blue; */
+}
+
+.btnWrapper {
+    width: 100%;
+    height: 70px;
+    border: 1.5px solid #D6D5CC;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 100%;
+    grid-template-areas:
+        "btnTextCell btnIconCell";
+    padding: 0;
+    margin: 0;
+}
+
+.btnTextCell {
+    grid-area: btnTextCell;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 1px solid red; */
+    padding-left: 8%;
+}
+
+.btnTextCell p {
+    font-weight: 400;
+}
+
+.btnIconCell {
+    grid-area: btnIconCell;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.btnIcon {
+    font-size: 20px;
+    color: black;
+}
+
+
+/* ---------------------------------------------- */
+.imageCell {
+    width: 65%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.imageCell img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: left top;
+}
+
+
+@media only screen and (max-device-width: 1025px) {
+    .postPooSectionWrapper {
+        margin-top: 10%;
+        margin-bottom: 10%;
+        width: 100%;
+        height: auto;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .postPooSectionInnerWrapper {
+        width: 100%;
+        height: 100%;
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .imageCell {
+        position: relative;
+        grid-area: imageCell;
+        width: 100%;
+        max-width: 100%;
+        /* border: 1px solid green; */
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        overflow: hidden;
+        /* height: auto; */
+        text-align: center;
+        overflow: hidden;
+        margin-bottom: 15%;
+    }
+
+    .imageCell img {
+        width: 100%;
+        height: 100%;
+        /* object-fit: cover; */
+        object-position: right center;
+        /* position: absolute; */
+        top: 0;
+        right: 0;
+    }
+
+    .contentCell {
+        grid-area: contentCell;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        /* border: 1px solid green; */
+    }
+
+    .contentInnerCell {
+        width: 90%;
+        height: auto;
+        /* border: 1px solid green; */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .headingCell {
+        width: 100%;
+        height: 100%;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+
+    .contentTextCell {
+        width: 100%;
+        height: auto;
+        /* border: 1px solid green; */
+        margin-bottom: 5%;
+
+    }
+
+    .buttonCell {
+        width: 100%;
+        height: auto;
+        /* border: 1px solid blue; */
+    }
+
+    .headingCell p {
+        font-size: 1.5rem;
+    }
+
+
+}

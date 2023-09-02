@@ -1,0 +1,434 @@
+.storeLocationSectionWrapper {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.storeLocationSectionInnerWrapper {
+    width: 95%;
+    height: 80%;
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 100%;
+    grid-template-areas:
+        "contentCell imageCell";
+}
+
+/* --------------------------------------------------- */
+.contentCell {
+    grid-area: contentCell;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* border: 1px solid red; */
+}
+
+.contentInnerCell {
+    width: 90%;
+    height: auto;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+.headingCell {
+    width: 100%;
+    height: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.headingCell p {
+    font-size: 1.8rem;
+    font-family: "Zapf Humanist 601";
+    color: #333333;
+
+}
+
+.contentTextCell {
+    width: 80%;
+    height: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    /* border: 1px solid red; */
+}
+
+.contentTextCell p {
+    color: rgb(55, 53, 53);
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.buttonCell {
+    width: 100%;
+    height: auto;
+    /* border: 1px solid blue; */
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.btnWrapper {
+    width: 100%;
+    height: 70px;
+    border: 1.5px solid #D6D5CC;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 100%;
+    grid-template-areas:
+        "btnTextCell btnIconCell";
+    padding: 0;
+    margin: 0;
+}
+
+.btnTextCell {
+    grid-area: btnTextCell;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 1px solid red; */
+    padding-left: 8%;
+}
+
+.btnTextCell p {
+    font-weight: 400;
+}
+
+.btnIconCell {
+    grid-area: btnIconCell;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.btnIcon {
+    font-size: 20px;
+    color: black;
+}
+
+
+/* ------------------------------------------- */
+
+.imageCell {
+    position: relative;
+    grid-area: imageCell;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid springgreen; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.imageCellInnerWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80% 10% 10%;
+    grid-template-areas:
+        "imgScrollListWrapper"
+        "imgScrollTrackWrapper"
+        "imgNameWrapper";
+}
+
+
+.imgScrollListWrapper {
+    position: relative;
+    grid-area: imgScrollListWrapper;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgScrollListInnerWrapper {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: scroll;
+}
+
+.imgScrollListInnerWrapper::-webkit-scrollbar {
+    display: none;
+}
+
+
+.imageWrapper {
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    transition: all.5s cubic-bezier(.215, .61, .355, 1);
+    -webkit-transition: all.5s cubic-bezier(.215, .61, .355, 1);
+    -moz-transition: all.5s cubic-bezier(.215, .61, .355, 1);
+    -o-transition: all.5s cubic-bezier(.215, .61, .355, 1);
+    -ms-transition: all.5s cubic-bezier(.215, .61, .355, 1);
+    overflow: hidden;
+}
+
+.imageWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* ------------------- */
+
+.imgScrollTrackWrapper {
+    grid-area: imgScrollTrackWrapper;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid springgreen; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.scrollBarTrack {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(184, 184, 184);
+}
+
+.scrollBarThumb {
+    width: 10%;
+    height: 100%;
+    background-color: #323232;
+}
+
+
+
+/* ------------------- */
+
+
+.imgNameWrapper {
+    grid-area: imgNameWrapper;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid salmon; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.imgNameWrapper p {
+    font-size: 1rem;
+    color: #666666;
+}
+
+/* ------------------------------------- */
+
+
+.imageWrapper:hover .scrollBtnWrapperLeft {
+    left: 0px;
+    transition: all.5s cubic-bezier(.215, .61, .355, 1);
+    -webkit-transition: all.5s cubic-bezier(.215, .61, .355, 1);
+    -moz-transition: all.5s cubic-bezier(.215, .61, .355, 1);
+    -o-transition: all.5s cubic-bezier(.215, .61, .355, 1);
+    -ms-transition: all.5s cubic-bezier(.215, .61, .355, 1);
+}
+
+.imageWrapper:hover .scrollBtnWrapperRight {
+    right: 0px;
+    transition: all.5s cubic-bezier(.215, .61, .355, 1);
+    -webkit-transition: all.5s cubic-bezier(.215, .61, .355, 1);
+    -moz-transition: all.5s cubic-bezier(.215, .61, .355, 1);
+    -o-transition: all.5s cubic-bezier(.215, .61, .355, 1);
+    -ms-transition: all.5s cubic-bezier(.215, .61, .355, 1);
+}
+
+.scrollBtnWrapperLeft {
+    position: absolute;
+    left: -70px;
+    height: 70px;
+    aspect-ratio: 1/1;
+    background-color: #323232;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    z-index: 999;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+
+
+}
+
+.scrollBtnWrapperRight {
+    position: absolute;
+    right: -70px;
+    height: 70px;
+    aspect-ratio: 1/1;
+    background-color: #323232;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all.5s cubic-bezier(.215, .61, .355, 1);
+    -webkit-transition: all.5s cubic-bezier(.215, .61, .355, 1);
+    -moz-transition: all.5s cubic-bezier(.215, .61, .355, 1);
+    -o-transition: all.5s cubic-bezier(.215, .61, .355, 1);
+    -ms-transition: all.5s cubic-bezier(.215, .61, .355, 1);
+    z-index: 999;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+.scrollIconDiv {
+    width: 80%;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scrollIcon {
+    font-size: 1.8rem;
+}
+
+/* // style={{ transform: `translateX(-${curr * 100}%)` }} */
+
+
+@media only screen and (min-width: 641px) and (max-width: 1025px) {
+
+    .storeLocationSectionInnerWrapper {
+        width: 90%;
+        height: 100%;
+        /* border: 1px solid black; */
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 35% 65%;
+        grid-template-areas:
+            "contentCell"
+            "imageCell";
+    }
+
+    .contentCell {
+        grid-area: contentCell;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contentInnerCell {
+        width: 95%;
+        height: auto;
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .headingCell {
+        width: 100%;
+        height: auto;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+
+    .headingCell p {
+        font-size: 2rem;
+    }
+
+    .contentTextCell {
+        width: 80%;
+        height: auto;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+
+    .contentTextCell p {
+        font-size: 1rem;
+        line-height: 2;
+    }
+
+
+    .buttonCell {
+        width: 100%;
+        height: auto;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .btnWrapper {
+        width: 40%;
+        height: 70px;
+        border: 1.5px solid #D6D5CC;
+        display: grid;
+        grid-template-columns: 80% 20%;
+        grid-template-rows: 100%;
+        grid-template-areas:
+            "btnTextCell btnIconCell";
+        padding: 0;
+        margin: 0;
+    }
+
+
+}
+
+@media only screen and (max-width: 640px) {
+
+    .storeLocationSectionInnerWrapper {
+        width: 95%;
+        height: 80%;
+        /* border: 1px solid black; */
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas:
+            "contentCell"
+            "imageCell";
+    }
+
+
+}

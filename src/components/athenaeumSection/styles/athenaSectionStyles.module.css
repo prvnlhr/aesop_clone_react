@@ -1,0 +1,228 @@
+.athenaSectionWrapper {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.athenaSectionInnerWrapper {
+    width: 95%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 100%;
+    grid-template-areas:
+        "contentCell imageCell";
+    /* border: 1px solid red; */
+}
+
+.contentCell {
+    grid-area: contentCell;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.contentInnerCell {
+    width: 90%;
+    height: 60%;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headingCell {
+    width: 100%;
+    height: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.headingCell p {
+    font-size: 1rem;
+}
+
+.secHeadingCell {
+    width: 100%;
+    height: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+}
+
+.secHeadingCell p {
+    font-size: 1.8rem;
+    font-family: "Zapf Humanist 601";
+    color: #333333;
+}
+
+.contentTextCell {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 1px solid green; */
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.contentTextCell p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.buttonCell {
+    width: 100%;
+    height: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 1px solid blue; */
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.btnWrapper {
+    width: 95%;
+    height: 60px;
+    border: 1.5px solid #D6D5CC;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 100%;
+    grid-template-areas:
+        "btnTextCell btnIconCell";
+    padding: 0;
+    margin: 0;
+
+}
+
+.btnTextCell {
+    grid-area: btnTextCell;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 1px solid red; */
+    padding-left: 8%;
+}
+
+.btnTextCell p {
+    font-weight: 400;
+}
+
+.btnIconCell {
+    grid-area: btnIconCell;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.btnIcon {
+    font-size: 20px;
+    color: black;
+}
+
+
+/* ---------------------------------------------- */
+.imageCell {
+    grid-area: imageCell;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.imageCell img {
+    width: 100%;
+    object-fit: contain;
+}
+
+
+@media only screen and (max-device-width: 1025px) {
+
+
+    .athenaSectionWrapper {
+        width: 100%;
+        height: auto;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-top: 5%;
+        margin-bottom: 10%;
+    }
+
+    .athenaSectionInnerWrapper {
+        width: 100%;
+        height: 100%;
+        /* border: 1px solid red; */
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "contentCell"
+            "imageCell"
+        ;
+
+        row-gap: 10px;
+
+    }
+
+    .contentCell {
+        grid-area: contentCell;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contentInnerCell {
+        width: 90%;
+        height: auto;
+        /* border: 1px solid green; */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .imageCell {
+        grid-area: imageCell;
+        width: 100%;
+        height: 100%;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .imageCell img {
+        width: 95%;
+        object-fit: contain;
+    }
+
+}

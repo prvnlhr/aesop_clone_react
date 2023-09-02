@@ -1,0 +1,572 @@
+.footerSectionWrapper {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #252525;
+}
+
+.footerSectionInnerWrapper {
+    width: 95%;
+    height: 85%;
+    /* border: 1px solid white; */
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-areas:
+        "emailCell emailCell orderSupportCell servicesCell locationPrefCell"
+        "sustanibilityCell sustanibilityCell aboutCell socialMediaCell emptyCell";
+    column-gap: 3%;
+    row-gap: 3%;
+}
+
+.emailCell {
+    grid-area: emailCell;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 85%;
+    grid-template-areas:
+        "headingCell"
+        "emailContentCell";
+}
+
+.emailContentCell {
+    grid-area: emailContentCell;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid springgreen; */
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 70%;
+    grid-template-areas:
+        "emailInputCell"
+        "checkBoxCell";
+    /* row-gap: 5%; */
+}
+
+.emailInputCell {
+    grid-area: emailInputCell;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.inputWrapper {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 0.2rem;
+}
+
+.emailInput {
+    background-color: transparent;
+    height: 100%;
+    flex: 1;
+    padding-left: 2%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.emailInputIconDiv {
+    height: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid orange; */
+}
+
+.emailInput::placeholder {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.checkBoxCell {
+    grid-area: checkBoxCell;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]+label::before {
+    content: "";
+    display: inline-block;
+    width: 4%;
+    aspect-ratio: 1/1;
+    background-color: transparent;
+    border: 1px solid white;
+    margin-right: 1.5%;
+    margin-top: 0.7%;
+}
+
+input[type="checkbox"]:checked+label::before {
+    background-color: transparent;
+}
+
+.checkBoxLabel {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+.checkBoxLabel p {
+    color: white;
+    font-size: 0.8rem;
+    line-height: 1.8;
+}
+
+.checkBoxTextWrapper {
+    flex: 1;
+    height: 100%;
+    /* border: 1px solid orange; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* -------------------------------------------- */
+
+.orderSupportCell {
+    grid-area: orderSupportCell;
+    /* border: 1px solid skyblue; */
+    width: 100%;
+    height: 100%;
+    display: grid;
+
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 80%;
+    grid-template-areas:
+        "headingCell"
+        "listCell";
+    row-gap: 5%;
+}
+
+.servicesCell {
+    grid-area: servicesCell;
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 100%;
+    display: grid;
+
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 80%;
+    grid-template-areas:
+        "headingCell"
+        "listCell";
+    row-gap: 5%;
+
+}
+
+.locationPrefCell {
+    grid-area: locationPrefCell;
+    /* border: 1px solid orange; */
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 80%;
+    grid-template-areas:
+        "headingCell"
+        "shipLangCell";
+    row-gap: 5%;
+
+}
+
+.shipLangCell {
+    grid-area: shipLangCell;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+        "shippingCell"
+        "languageCell";
+}
+
+.shippingCell {
+    grid-area: shippingCell;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 70%;
+    grid-template-areas:
+        "locationPreSubListHeadingCell"
+        "locationPreSubListCell";
+}
+
+.languageCell {
+    grid-area: languageCell;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid springgreen; */
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 70%;
+    grid-template-areas:
+        "locationPreSubListHeadingCell"
+        "locationPreSubListCell";
+}
+
+.locationPreSubListHeadingCell {
+    grid-area: locationPreSubListHeadingCell;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid orange; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.locationPreSubListHeadingCell p {
+    color: white;
+    font-size: 0.85rem;
+    letter-spacing: 0.02rem;
+}
+
+.locationPreSubListCell {
+    grid-area: locationPreSubListCell;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid springgreen; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.subListItemWrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 1px solid salmon; */
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.subListItemWrapper p {
+    color: white;
+    font-size: 0.85rem;
+}
+
+
+/* ------------------------------------------- */
+.sustanibilityCell {
+    grid-area: sustanibilityCell;
+    /* border: 1px solid purple; */
+    width: 100%;
+    height: 100%;
+    display: grid;
+
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 85%;
+    grid-template-areas:
+        "headingCell"
+        "sustanibilityTextCell";
+}
+
+.sustanibilityTextCell {
+    grid-area: sustanibilityTextCell;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 4%;
+}
+
+.sustanibilityTextCell p {
+    width: 90%;
+    font-size: 0.85rem;
+    color: white;
+    line-height: 2;
+    font-weight: 400;
+}
+
+.sustanibilityTextCell span {
+    width: 90%;
+    font-size: 0.85rem;
+    color: white;
+    line-height: 2;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/* --------------- */
+
+.aboutCell {
+    grid-area: aboutCell;
+    /* border: 1px solid pink; */
+    width: 100%;
+    height: 100%;
+    display: grid;
+
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 80%;
+    grid-template-areas:
+        "headingCell"
+        "listCell";
+    row-gap: 5%;
+
+}
+
+.socialMediaCell {
+    grid-area: socialMediaCell;
+    /* border: 1px solid teal; */
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 80%;
+    grid-template-areas:
+        "headingCell"
+        "listCell";
+    row-gap: 5%;
+}
+
+/* --------------------- */
+.headingCell {
+    grid-area: headingCell;
+    width: 100%;
+    height: 100%;
+    border-bottom: 0.05rem solid white;
+    /* border: 1px solid orange; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.headingCell p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+}
+
+.listCell {
+    grid-area: listCell;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid springgreen; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.listItemWrapper {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 1px solid salmon; */
+}
+
+.listItemWrapper p {
+    font-size: 0.8rem;
+    color: white;
+    /* padding-top: 6%; */
+    /* padding-bottom: 6%; */
+}
+
+.linkIconDiv {
+    height: 100%;
+    aspect-ratio: 1/1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid salmon; */
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1025px) {
+
+    .footerSectionInnerWrapper {
+        width: 95%;
+        height: 90%;
+        /* border: 1px solid black; */
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+        grid-template-rows: minmax(0, 0.5fr) minmax(0, 1fr) minmax(0, 1fr);
+        grid-template-areas:
+            "emailCell emailCell emailCell"
+            "orderSupportCell servicesCell  locationPrefCell"
+            "sustanibilityCell  aboutCell emptyCell";
+    }
+
+    .socialMediaCell {
+        display: none;
+    }
+
+    .emailContentCell {
+        grid-area: emailContentCell;
+        width: 100%;
+        height: 100%;
+        /* border: 1px solid springgreen; */
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 45%;
+        grid-template-areas:
+            "emailInputCell"
+            "checkBoxCell";
+        row-gap: 5%;
+    }
+
+    input[type="checkbox"]+label::before {
+        content: "";
+        display: inline-block;
+        width: 3%;
+        aspect-ratio: 1/1;
+        background-color: transparent;
+        margin-right: 3%;
+        margin-top: 0.7%;
+    }
+
+    .inputWrapper {
+        width: 100%;
+        height: 3rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 0.2rem;
+    }
+
+
+    .linkIcon {
+        height: 35% !important;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+
+    .footerSectionWrapper {
+        width: 100%;
+        height: 120%;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #252525;
+    }
+
+    .footerSectionInnerWrapper {
+        width: 95%;
+        height: 95%;
+        /* border: 1px solid white; */
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        grid-template-rows: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+        grid-template-areas:
+            "emailCell emailCell"
+            "orderSupportCell servicesCell"
+            "locationPrefCell sustanibilityCell"
+            "aboutCell emptyCell";
+        column-gap: 10%;
+    }
+
+    .socialMediaCell {
+        display: none;
+    }
+
+    .emailContentCell {
+        grid-area: emailContentCell;
+        width: 100%;
+        height: 100%;
+        /* border: 1px solid red; */
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 30% 70%;
+        grid-template-areas:
+            "emailInputCell"
+            "checkBoxCell";
+        row-gap: 10%;
+    }
+
+
+
+    input[type="checkbox"]+label::before {
+        content: "";
+        display: inline-block;
+        width: 2rem;
+        aspect-ratio: 1/1;
+        background-color: transparent;
+        border: 1px solid white;
+        margin-right: 0.8rem;
+        margin-top: 0.7%;
+    }
+
+    .headingCell {
+        border-bottom: 0.05rem solid white;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .headingCell p {
+        font-size: 0.85rem;
+        font-weight: 500;
+        color: white;
+    }
+
+    .listItemWrapper p {
+        font-size: 0.8rem;
+    }
+
+    .sustanibilityTextCell p {
+        width: 90%;
+        font-size: 0.7rem;
+        line-height: 2;
+    }
+
+    .sustanibilityTextCell span {
+        width: 90%;
+        font-size: 0.7rem;
+        line-height: 2;
+    }
+
+    .linkIconDiv {
+        height: 100%;
+        aspect-ratio: 1/1.5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid salmon; */
+        margin-left: 2%;
+    }
+
+    .linkIcon {
+        height: 50% !important;
+    }
+
+}
