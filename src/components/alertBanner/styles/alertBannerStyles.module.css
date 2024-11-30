@@ -6,6 +6,7 @@
     align-items: center;
     background-color: #C2C2B1;
     overflow: hidden;
+    text-align: center;
 
 }
 
@@ -21,4 +22,23 @@
     margin-left: 5px;
     white-space: nowrap;
     letter-spacing: 0.02rem;
+}
+
+@media only screen and (max-width: 640px) {
+    .alertBannerWrapper p {
+        width: 95%;
+        font-size: clamp(0.7rem, 0.4999999999999999rem + 1.0000000000000004vw, 0.9rem) !important;
+        color: black;
+        letter-spacing: 0.02rem;
+        white-space: normal;
+    }
+
+    .alertBannerWrapper span {
+        font-weight: 600;
+        margin-left: 5px;
+        white-space: nowrap;
+        letter-spacing: 0.02rem;
+        font-size: clamp(0.7rem, 0.4999999999999999rem + 1.0000000000000004vw, 0.9rem) !important;
+    }
+
 }

@@ -14,6 +14,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .textWrapper:hover {
@@ -35,4 +36,23 @@
     margin-left: 10px;
     letter-spacing: 0.02rem;
     white-space: nowrap;
+}
+
+@media only screen and (max-width: 640px) {
+    .textWrapper p {
+        width: 95%;
+        font-size: clamp(0.7rem, 0.4999999999999999rem + 1.0000000000000004vw, 0.9rem) !important;
+        color: white;
+        letter-spacing: 0.02rem;
+        letter-spacing: 0.02rem;
+        white-space: normal;
+
+    }
+
+    .textWrapper span {
+        font-size: clamp(0.7rem, 0.4999999999999999rem + 1.0000000000000004vw, 0.9rem) !important;
+        margin-left: 10px;
+        letter-spacing: 0.02rem;
+        white-space: normal;
+    }
 }
